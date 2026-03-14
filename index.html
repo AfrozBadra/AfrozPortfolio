@@ -1,460 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Afroz Badra Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-	  
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+	<title>Afroz Badra Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/aos.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
 
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-<style>
+	<link rel="stylesheet" href="css/aos.css">
 
-/*======================================
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		:root {
+			--primary-color: #ffbd39;
+			--heading-color: #ffffff;
+			--text-color: rgba(255, 255, 255, 0.5);
+			--bg-color: #000000;
+		}
+
+		html,
+		body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+
+		/* Responsive container padding - prevent content cramping on mobile */
+		@media (max-width: 767.98px) {
+			.container {
+				padding-left: 1.25rem !important;
+				padding-right: 1.25rem !important;
+			}
+		}
+
+		@media (max-width: 575.98px) {
+			.container {
+				padding-left: 1rem !important;
+				padding-right: 1rem !important;
+			}
+		}
+
+		/*======================================
 //--//-->   ABOUT
 ======================================*/
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+		/* Projects completed + LinkedIn - centered in middle of About section */
+		#about-section .projects-linkedin-block {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+		#about-section .projects-linkedin-block .counter-wrap,
+		#about-section .projects-linkedin-block .counter-wrap .text {
+			text-align: center !important;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.about-mf .about-img,
+		.ftco-about .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img,
+		.ftco-about .about-img img {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			width: 100%;
+			max-width: 320px;
+			min-width: 180px;
+			aspect-ratio: 1 / 1;
+		}
+
+		/*======================================
+//--//-->   RESPONSIVE - About section alignment
+======================================*/
+
+		/* ---- Desktop & global ---- */
+		#about-section .container {
+			max-width: 1140px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
+
+		#about-section .row {
+			justify-content: center;
+		}
+
+		#about-section .img-about .overlay {
+			padding: 2rem 1.5rem;
+			box-sizing: border-box;
+		}
+
+		#about-section .about-info p,
+		#about-section .skill-mf,
+		#about-section .heading-section p,
+		#about-section .about-info {
+			text-align: left;
+		}
+
+		/* Info list inside About: consistent label width + word wrapping */
+		#about-section .about-info li {
+			display: flex;
+			align-items: flex-start;
+			gap: 0.5rem;
+		}
+
+		#about-section .about-info li span:first-child {
+			min-width: 120px;
+			flex-shrink: 0;
+			font-weight: 700;
+		}
+
+		#about-section .about-info li span:last-child {
+			word-break: break-word;
+		}
+
+		/* Right column padding on large screens */
+		#about-section .col-md-6.col-lg-7 {
+			padding-left: 2.5rem !important;
+		}
+
+		/* ---- Tablet ---- */
+		@media (max-width: 991.98px) {
+			#about-section .container {
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+
+			#about-section .img-about .overlay {
+				padding: 1.75rem 1.5rem;
+			}
+
+			#about-section .about-img img {
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 1rem;
+			}
+
+			#about-section .col-md-6.col-lg-7 {
+				padding-left: 1.5rem !important;
+			}
+		}
+
+		/* ---- Mobile ---- */
+		@media (max-width: 767.98px) {
+			#about-section {
+				overflow-x: hidden;
+			}
+
+			#about-section .container {
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+				max-width: 100%;
+			}
+
+			#about-section .row {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			#about-section .img-about .overlay {
+				padding: 1.5rem 1.25rem;
+			}
+
+			#about-section .about-img img {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+
+			/* Stack columns: center everything */
+			#about-section .col-md-6.col-lg-5,
+			#about-section .col-md-6.col-lg-7 {
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding-left: 1.25rem !important;
+				padding-right: 1.25rem !important;
+			}
+
+			#about-section .about-info,
+			#about-section .about-info p,
+			#about-section .skill-mf,
+			#about-section .heading-section,
+			#about-section .heading-section p,
+			#about-section .about-info li {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			#about-section .about-info li span:first-child {
+				min-width: 100px;
+				flex-shrink: 0;
+			}
+
+			#about-section .about-info li span:last-child {
+				word-break: break-word;
+			}
+
+			#about-section .skill-mf span {
+				display: inline-block;
+				max-width: 100%;
+			}
+
+			#about-section .heading-section p {
+				word-break: break-word;
+			}
+
+			#about-section .pl-lg-5 {
+				padding-left: 1rem !important;
+				padding-right: 1rem !important;
+			}
+		}
+
+		/* ---- Small phones ---- */
+		@media (max-width: 575.98px) {
+			#about-section .container {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			#about-section .img-about .overlay {
+				padding: 1.25rem 1rem;
+			}
+
+			#about-section .about-info li span:first-child {
+				min-width: 90px;
+			}
+		}
 
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: var(--primary-color);
+		}
 
 
-/* project image zoom effect */
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: var(--heading-color);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
 
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
 
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
 
 
-</style>
+		/* project image zoom effect */
 
-<link rel="shortcut icon" type="x-icon" href="images/profile-pic.png" >
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Afroz Badra</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Current</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/remove(thumbnailgithub).png); ">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Namaste🙏 !</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Afroz Badra</span></h1>
+		/*======================================
+//--//-->   RESUME / EXPERIENCE / EDUCATION
+======================================*/
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+		#resume-section .container {
+			max-width: 1140px;
+			margin: 0 auto;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 
-						<script>
+		#resume-section .resume-section-heading {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+		#resume-section .resume-section-heading .big-4 {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Student  ',
-						'Engineer  ',
-						'Developer   ',
-						];
+		#resume-section .resume-section-heading .underline {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 120px;
+		}
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+		#resume-section .resume-cards-row {
+			display: flex;
+			justify-content: center;
+			align-items: stretch;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			margin-bottom: 2rem;
+		}
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+		#resume-section .resume-card-col {
+			flex: 1 1 100%;
+			max-width: 100%;
+			min-width: 0;
+		}
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+		@media (min-width: 768px) {
+			#resume-section .resume-card-col {
+				flex: 1 1 calc(50% - 0.75rem);
+				max-width: calc(50% - 0.75rem);
+			}
+		}
 
-						</script>
+		@media (min-width: 992px) {
+			#resume-section .resume-card-col {
+				flex: 1 1 calc(50% - 0.75rem);
+				max-width: calc(50% - 0.75rem);
+			}
+		}
 
-						<br>
-						<br>
-			            <h2>"Engineering the Future of Innovation" </h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/afrozbadra/" class="btn btn-primary py-3 px-4" target="_blank">LinkedIn</a> 
-							<a href="https://github.com/AfrozBadra" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+		/* Single centered card for Experience */
+		#resume-section .resume-cards-row.resume-single {
+			justify-content: center;
+		}
+
+		#resume-section .resume-cards-row.resume-single .resume-card-col {
+			flex: 1 1 100%;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#resume-section .resume-wrap {
+			height: 100%;
+			padding: 1.5rem;
+			word-wrap: break-word;
+		}
+
+		#resume-section .resume-wrap ul {
+			padding-left: 1.25rem;
+			margin-bottom: 0;
+		}
+
+		#resume-section .resume-wrap li {
+			margin-bottom: 0.5rem;
+		}
+
+		@media (max-width: 767px) {
+			#resume-section .resume-wrap {
+				padding: 1.25rem;
+			}
+
+			#resume-section .resume-wrap .date {
+				font-size: 1.1rem !important;
+			}
+
+			#resume-section .resume-wrap h2 {
+				font-size: 1.25rem !important;
+			}
+
+			#resume-section .resume-wrap .position {
+				font-size: 0.75rem !important;
+				letter-spacing: 1px !important;
+			}
+
+			#resume-section .big-4 {
+				font-size: 1.75rem !important;
+				transform: none;
+			}
+
+			#resume-section .container {
+				padding-left: 0.75rem;
+				padding-right: 0.75rem;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			#resume-section .resume-wrap {
+				padding: 1.5rem;
+			}
+
+			#resume-section .big-4 {
+				font-size: 2rem !important;
+			}
+		}
+	</style>
+
+	<link rel="shortcut icon" type="x-icon" href="images/profile-pic.png">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Afroz Badra</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Current</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#certificates-section" class="nav-link"><span>Certificates</span></a>
+					</li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
 		</div>
-    </section>
+	</nav>
+	<section id="home-section" class="hero" style="pointer-events: none;">
+		<div class="home-slider  owl-carousel" style="pointer-events: auto;">
+			<!-- Disable dragging visually overall, but let inner elements be clickable -->
+			<div class="slider-item" style="pointer-events: none;">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url('images/hero-profile.png'); background-size: 130%; background-position: center 20%; background-repeat: no-repeat; border-radius: 50%;">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Namaste🙏 !</span>
+								<h1 class="mb-4 mt-3">I'm <span>Afroz Badra</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Student  ',
+										'Engineer  ',
+										'Developer   ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>"Engineering the Future of Innovation" </h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<p style="pointer-events: auto;"><a href="https://www.linkedin.com/in/afrozbadra/"
+										class="btn btn-primary py-3 px-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+									<a href="https://github.com/AfrozBadra"
+										class="btn btn-white btn-outline-white py-3 px-4" target="_blank" rel="noopener noreferrer">My works</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="row d-flex align-items-stretch justify-content-center">
+					<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
 								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/profile-pic (4).png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
+									<div class="col-sm-6 col-md-6">
+										<div class="about-img">
+											<img src="images/profile-pic.png"
+												class="img-fluid rounded-circle b-shadow-a" alt="Afroz Badra - Avatar"
+												style="object-fit: cover; border: 2px solid rgba(0,0,0,0.2);">
+										</div>
 									</div>
 									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Afroz Badra</span></p>
-										<p><span class="title-s">Pursuing: </span> <span>B.Tech Degree</span></p>
-										<p><span class="title-s">Experience: </span> <span>Intern at Scaler Technology(YIIP 2.0)</span></p>
-										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
-									  </div>
+									<div class="col-sm-6 col-md-6">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Afroz Badra</span></p>
+											<p><span class="title-s">Pursuing: </span> <span>B.Tech Degree</span></p>
+											<p><span class="title-s">Experience: </span> <span>Security Analyst</span>
+											</p>
+											<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+										</div>
 									</div>
-								  </div>
+								</div>
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>HTML5</span> <span class="pull-right">68%</span>
+									<span>Web Development</span> <span class="pull-right">17%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 68%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 17%;"
+											aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
-									<span>CSS3</span> <span class="pull-right">52%</span>
+
+									<span>Python</span> <span class="pull-right">34%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 52%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 34%"
+											aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
+
 									<span>Computer Networking</span> <span class="pull-right">28%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 28%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 28%"
+											aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
-									<span>cybersecurity Principles</span> <span class="pull-right">9%</span>
+
+									<span>Cybersecurity Principles</span> <span class="pull-right">9%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 9%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 9%" aria-valuenow="9"
+											aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									
+
 									<span>Linux Terminal</span> <span class="pull-right">26%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 26%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 26%"
+											aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-								
+
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
-								
-								<p>Hi, I'm Afroz Badra, 
-									An enthusiastic engineering student embarking on an exciting journey in the world of technology and programming. Currently pursuing a B.Tech Degree, I am passionate about exploring the intricate facets of technology and the endless possibilities it offers.
-									
-									My interests span across various domains including web development, cybersecurity, and innovative technological solutions. As a participant in the Young Innovative Internship Program at Scaler School of Technology, I am constantly honing my skills, learning from industry experts, and working on cutting-edge projects.
-									
-									I thrive in dynamic environments that challenge me to think creatively and solve complex problems. My goal is to leverage my technical knowledge and programming skills to contribute to impactful projects and drive innovation in the tech industry.</p>
+
+								<p>Hi, I'm Afroz Badra,
+									An enthusiastic engineering student embarking on an exciting journey in the world of
+									technology and programming. Currently pursuing a B.Tech Degree, I am passionate
+									about exploring the intricate facets of technology and the endless possibilities it
+									offers.
+
+									My interests span across various domains including web development, cybersecurity,
+									and innovative technological solutions. As a participant in the Young Innovative
+									Internship Program at Scaler School of Technology, I am constantly honing my skills,
+									learning from industry experts, and working on cutting-edge projects.
+
+									I thrive in dynamic environments that challenge me to think creatively and solve
+									complex problems. My goal is to leverage my technical knowledge and programming
+									skills to contribute to impactful projects and drive innovation in the tech
+									industry.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Learning Ethical Hacking/Programming, Engineer.</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Understanding of Networking principles, Tools.</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology(Pursuing).</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Gujarathi.</span></li>
+									<li class="d-flex"><span>Profile:</span> <span>Learning Ethical Hacking/Programming,
+											Engineer.</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Understanding of Networking
+											principles, Tools.</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of
+											Technology(Pursuing).</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Gujarati.</span>
+									</li>
 									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
-									<li class="d-flex"><span>Other Skills:</span> <span>Creativity, Attention to Detail, Problem-Solving, Responsive Web Design, Hacking Tools.
+									<li class="d-flex"><span>Other Skills:</span> <span>Creativity, Attention to Detail,
+											Problem-Solving, Responsive Web Design, Hacking Tools.
 
-									</span></li>
-									<li class="d-flex"><span>Interest:</span> <span> Creativity, Attention to Detail, Problem-Solving, Responsive Web Design, Traveling, Cricket, Chilling.
+										</span></li>
+									<li class="d-flex"><span>Interest:</span> <span> Creativity, Attention to Detail,
+											Problem-Solving, Responsive Web Design, Traveling, Cricket, Chilling.
 
-									</span></li>
-									
+										</span></li>
+
 								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="3">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-    </section>
 
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Current Status</h1>
-            <h2 class="mb-4">Status</h2>
-            <p> An enthusiastic engineering student embarking on an exciting journey in the world of technology and programming. Currently pursuing a B.Tech Degree, I am passionate about exploring the intricate facts of technology and the endless possibilities it offers.</p>
-          </div>
-        </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-<!-- 		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">July 2024- August 2024</span>
-						<h2>Web Developer</h2>
-						<span class="position">CodSoft - Internship</span>
-						<p class="mt-4">Offered a 4-week Web Developer internship by CodSoft, a renowned company in the tech industry.
-							<ul>
-								<li>This educational internship is designed to provide hands-on experience and deepen my understanding of web development.</li>
-								<li>I will have the opportunity to work on real-world projects, enhancing my skills in HTML, CSS, JavaScript, and other web technologies.</li> <li>This experience will not only strengthen my technical abilities but also prepare me for future challenges in the field of web development.</li>
-							</ul>
+			<div class="projects-linkedin-block">
+				<div class="counter-wrap ftco-animate">
+					<div class="text">
+						<p class="mb-4">
+							<span class="number" data-number="3">0</span> <span>+</span>
+							<span>&nbsp; Projects completed</span>
 						</p>
-					</div> -->
-
+						<p class="mb-0"><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank" rel="noopener noreferrer"
+								class="btn btn-primary py-3 px-4">LinkedIn</a></p>
+					</div>
 				</div>
+			</div>
+		</div>
+	</section>
 
-				<div class="col-md-6">
+	<main>
+		<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Current Status</h1>
+					<h2 class="mb-4">Status</h2>
+					<p> An enthusiastic engineering student embarking on an exciting journey in the world of technology
+						and programming. Currently pursuing a B.Tech Degree, I am passionate about exploring the
+						intricate facts of technology and the endless possibilities it offers.</p>
+				</div>
+			</div>
+
+			<div class="row resume-section-heading">
+				<div class="col-12">
+					<h1 class="big-4">Experience</h1>
+					<div class="underline"></div>
+				</div>
+			</div>
+
+			<div class="resume-cards-row resume-single">
+				<div class="resume-card-col">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">June 2024 - Sep 2024</span>
 						<h2>Project Intern</h2>
 						<span class="position">Scaler Technology- (YIIP 2.0)</span>
-						<p class="mt-4">Offered a 10-week Project Intern Internship by Scaler Technology, a renowned company in the tech industry and Learning School. 
-
-							<ul>
-								<li>Empowering Future Innovators-
-									Fostering entrepreneurial spirit and innovation in young talents like me by providing practical learning opportunities.</li>
-								<li>Building Tech and Entrepreneurial Skills-
-									Equip participants with skills in Al, Chrome plugin development, and other tech domains through hands- on experience and expert mentorship.</li>
-								<li>The Internship will go through ten levels of challenges guided by industry experts. Each level will help them unlock a new skill.</li>
-							</ul>
-						</p>
+						<p class="mt-4">Offered a 10-week Project Intern Internship by Scaler Technology, a renowned
+							company in
+							the tech industry and Learning School.</p>
+						<ul>
+							<li>Empowering Future Innovators-
+								Fostering entrepreneurial spirit and innovation in young talents like me by providing
+								practical
+								learning opportunities.</li>
+							<li>Building Tech and Entrepreneurial Skills-
+								Equip participants with skills in Al, Chrome plugin development, and other tech domains
+								through
+								hands-on experience and expert mentorship.</li>
+							<li>The Internship will go through ten levels of challenges guided by industry experts. Each
+								level
+								will help them unlock a new skill.</li>
+						</ul>
 					</div>
-
 				</div>
 			</div>
 
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2024-Present</span>
-    					<h2>Bachelor of Technology(Pursuing).</h2>
-    					<span class="position">Mumbai University.</span>
-    					<p class="mt-4">Grade: ___CGPA.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2022-2024</span>
-    					<h2>Higher Secondary School.</h2>
-    					<span class="position">Shri G.P.M. Degree College.</span>
-    					<p class="mt-4">Grade: Second class distinction.</p>
-    				</div>
+			<div class="row resume-section-heading">
+				<div class="col-12">
+					<h1 class="big-4">Education</h1>
+					<div class="underline"></div>
 				</div>
-    		</div>
+			</div>
 
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://www.upwork.com/freelancers/~01cc0c72bab9008a10?mp_source=share" target="_blank"  class="btn btn-primary py-4 px-5">services</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+			<div class="resume-cards-row">
+				<div class="resume-card-col">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>Bachelor of Technology (Pursuing)</h2>
+						<span class="position">Mumbai University</span>
+						<p class="mt-4">Grade: ___CGPA.</p>
+					</div>
+				</div>
 
-   
+				<div class="resume-card-col">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-2024</span>
+						<h2>Higher Secondary School</h2>
+						<span class="position">Shri G.P.M. Degree College</span>
+						<p class="mt-4">Grade: Second class distinction.</p>
+					</div>
+				</div>
+			</div>
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are some sample projects which I have made in my journey.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://afroztech-dev.github.io/cloneamazon/" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2024-07-22\ 145645.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://www.upwork.com/freelancers/~01cc0c72bab9008a10?mp_source=share" target="_blank" rel="noopener noreferrer"
+							class="btn btn-primary py-4 px-5">services</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                <h3 class="heading"><a href="https://afrozbadra.github.io/cloneamazon/" target="_blank">Amazon Clone - By Afroz Badra</a></h3>
-                <p>🔹 Developed using Raw HTML & CSS.
-					Built with Dedication and Hard Work.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://afrozbadra.github.io/AfrozPortfolio/" target="_blank"  class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2024-07-22\ 150502.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://afrozbj.free.nf" target="_blank" >LovePlay- A WebSite for your love 
-				</a></h3>
-                <p> 🔹A sleek and modern music player website crafted with pure HTML and CSS. Dive into the aesthetic world of love with LovePlay.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://youtu.be/5uccwDivNSc?si=pktEatb1PyzcG77E" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/thumbnail\ youtube.webp');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://youtu.be/5uccwDivNSc?si=pktEatb1PyzcG77E" target="_blank">Virtual Influencer: Social Media's Future</a></h3>
-                <p>🔹Youtube video about today's impact on Virtual Influencer's.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<!-- <div class="col-md-4 d-flex ftco-animate">
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are some sample projects which I have made in my journey.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://afrozbadra.github.io//cloneamazon/" target="_blank"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/project-amazon.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://afrozbadra.github.io/cloneamazon/"
+									target="_blank" rel="noopener noreferrer">Amazon Clone - By Afroz Badra</a></h3>
+							<p>🔹 Developed using Raw HTML & CSS.
+								Built with Dedication and Hard Work.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://afrozbadra.github.io/PlusePlay/" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect"
+							style="background-image: url('images/project-pulseplay.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://afrozbadra.github.io/PlusePlay/"
+									target="_blank" rel="noopener noreferrer">PulsePlay - A WebSite
+									for your love
+								</a></h3>
+							<p> 🔹A sleek and modern music player website crafted with pure HTML and CSS. Dive into the
+								aesthetic world of love with PulsePlay</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://youtu.be/5uccwDivNSc?si=pktEatb1PyzcG77E" target="_blank" rel="noopener noreferrer"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/project-youtube.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://youtu.be/5uccwDivNSc?si=pktEatb1PyzcG77E"
+									target="_blank" rel="noopener noreferrer">Virtual Influencer: Social Media's Future</a></h3>
+							<p>🔹Youtube video about today's impact on Virtual Influencer's.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- added justify-content-center to center align the last two projects -->
+			<div class="row d-flex justify-content-center">
+				<!-- <div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
 				</a>
@@ -477,168 +846,227 @@
 			  </div>
 			</div>
 		 </div> -->
-	  </div>
-    </section>
+			</div>
+	</section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="532">0</strong>
-                <span>Connections</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="5">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="543">0</strong>
-                <span>Followers</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="72">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			 <div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More Details on <span> LinkedIn  </span> </h2>
-						<div class="heading"> <h4> My goal is to leverage my technical knowledge and programming skills to contribute to impactful projects and drive innovation in the tech industry.</h4>
-						<br>
-						<p><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank" class="btn btn-primary py-3 px-5">LinkedIn</a></p>
+	<section class="ftco-section" id="certificates-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certificates</h1>
+					<h2 class="mb-4">Certifications</h2>
+					<p>Milestones of continuous learning and professional development.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="images/cert-web-tester.png" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/cert-web-tester.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="images/cert-web-tester.png" target="_blank">Certified Junior Web Application Penetration Tester</a></h3>
+							<p>🔹 Sturtle Security Pvt. Ltd. <br>Demonstrated proficiency in web application penetration testing. <br>ID: ECR-01240 | March 2026</p>
 						</div>
 					</div>
 				</div>
-			</div> 
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="images/cert-python-basic.png" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/cert-python-basic.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="images/cert-python-basic.png" target="_blank">Python (Basic)</a></h3>
+							<p>🔹 HackerRank <br>Demonstrated proficiency in Python programming fundamentals. <br>ID: AE4ABOCBD1F2 | September 2025</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="images/cert-advent-cyber.png" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/cert-advent-cyber.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="images/cert-advent-cyber.png" target="_blank">Advent of Cyber 2025</a></h3>
+							<p>🔹 TryHackMe <br>Completed 24 cyber security challenges covering security fundamentals. <br>ID: THM-KYPBHV1AUN | December 2025</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="572">0</strong>
+							<span>Connections</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="3">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="594">0</strong>
+							<span>Followers</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="92">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/background-hireme.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2 class="mb-4">More Details on <span> LinkedIn </span> </h2>
+						<div class="heading">
+							<h4> My goal is to leverage my technical knowledge and programming skills to contribute to
+								impactful projects and drive innovation in the tech industry.</h4>
+							<br>
+							<p><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank" rel="noopener noreferrer"
+									class="btn btn-primary py-3 px-5">LinkedIn</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Mumbai, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://0101010101" target="_blank">+91 0000 0000 00</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:info@yoursite.com" target="_blank">afroz.badra24@sakec.ac.in</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Follow Me</h3>
+						<p><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank">LinkedIn</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2 class="mb-4">Have a <span>Question?</span> <a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSdhWTzDP8cc9DOCUajBAVtDer1C3-Q3grgeEZwYPGA044WUnQ/viewform?usp=publish-editor"
+							target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-5">Click Here</a></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul
+						class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0 mt-4">
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<li class="ftco-animate"><a href="https://www.youtube.com/@AFROZBADRA" target="_blank" rel="noopener noreferrer"><span
+									class="icon-youtube"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank" rel="noopener noreferrer"><span
+									class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.instagram.com/_affo_69/" target="_blank" rel="noopener noreferrer"><span
+									class="icon-instagram"></span></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 
 
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Mumbai, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101" target="_blank">+91 88797 7077 49</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com" target="_blank">affobadra2006@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Follow Me</h3>
-	            <p><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank">LinkedIn</a></p>
-	          </div>
-          </div>
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/fjoTq39Fbrvg1ANa6" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<p>
+						<span id="current-year"></span> All rights reserved &copy; | This template is made
+						with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+							href="https://www.linkedin.com/in/afrozbadra/" target="_blank" rel="noopener noreferrer">Afroz Badra</a>
+					</p>
 				</div>
 			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@AFROZBADRA" target="_blank"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/afrozbadra/" target="_blank"><span class="icon-linkedin"></span></a></li>  
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/____________"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://facebook.com/____________"><span class="icon-facebook"></span></a></li> -->
-				      <li class="ftco-animate"><a href="https://www.instagram.com/_affo_69/" target="_blank"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
-
-
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-   
-			  <p><script>(new Date().getFullYear());</script> All rights reserved &copy; | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.linkedin.com/in/afrozbadra/" target="_blank">Afroz Badra</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. </p> -->
-			</div>
-		  </div>
 		</div>
-	  </footer>
+	</footer>
 
 
-   
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+	<script>
+		document.getElementById('current-year').textContent = new Date().getFullYear();
+	</script>
+
+</body>
+
 </html>
